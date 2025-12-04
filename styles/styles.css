@@ -134,7 +134,7 @@ header img {
 
 .site-nav .nav-list {
   display: flex;
-  flex-direction: right;
+  justify-content: flex-end;
   gap: 30px;
   list-style: none;
   flex-wrap: wrap;
