@@ -3,19 +3,23 @@
 const submitBtn = document.getElementById("submit-button");
 const contactPage = document.getElementById("contact-page");
 
-submitBtn.addEventListener("click", function(event) {
+submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
-
-  contactPage.innerHTML = `
-    <p id="message">Thank you for your message</p>
-    <a href="../index.html" id="back-home" class="fake-button blue-hover">
-        Back to Home
-    </a>
-  `;
-
-  const message = document.getElementById("message");
+  contactPage.innerHTML = "";
+  const message = document.createElement("p");
+  message.textContent = "Thank you for your message";
   message.style.fontSize = "24px";
   message.style.textAlign = "center";
+  const backBtn = document.createElement("a");
+  backBtn.textContent = "Back to Home";
+  backBtn.href = "../index.html";
+  backBtn.style.width = "clamp(150px, 20vw, 250px)";
+  backBtn.style.margin = "20px auto";
+  backBtn.style.display = "block";
+
+  backBtn.classList.add("fake-button", "blue-hover");
+  contactPage.appendChild(message);
+  contactPage.appendChild(backBtn);
 });
 
 
