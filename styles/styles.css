@@ -329,10 +329,3 @@ button {
   width: 300px;
   margin-left: calc(150px + 24px);
 }
-#back-home {
-  width: clamp(150px, 20vw, 250px);
-  margin: 20px auto 0;
-  text-align: center;
-  display: block;
-}
-
