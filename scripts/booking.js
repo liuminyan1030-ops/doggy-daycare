@@ -67,5 +67,5 @@ fullBtn.addEventListener("click", function () {
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
 function calculate() {
-  costLabel.innerHTML = selectedDays * costPerDay;
+  costLabel.textContent = selectedDays * costPerDay;
 }
