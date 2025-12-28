@@ -5,7 +5,7 @@ const contactPage = document.getElementById("contact-page");
 
 submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
-  contactPage.innerHTML = "";
+  contactPage.textContent = "";
   const message = document.createElement("p");
   message.textContent = "Thank you for your message";
   message.style.fontSize = "24px";
